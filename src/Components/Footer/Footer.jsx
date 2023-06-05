@@ -12,8 +12,8 @@ export const Footer = () => {
                <p>Phone:+58 414-574-3920</p>
             </Datos>
             <Iconos>
-            <BsLinkedin />
-            <BsGithub />
+            <BsLinkedin color="blue" size={50} />
+            <BsGithub size={50} />
             </Iconos>
         </Section>
     

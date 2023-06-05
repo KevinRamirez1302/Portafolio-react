@@ -10,6 +10,11 @@ export const Section = styled.section`
 `
 
 export const Titulo = styled.div `
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-weight: bold;
+
+    @media screen and (max-width:450px) {
+        text-align: center;
+        
+    }
 `

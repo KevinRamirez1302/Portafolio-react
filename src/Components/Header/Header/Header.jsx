@@ -6,8 +6,8 @@ export const Header = () => {
     return <>
         <Section>
             <Titulo>
-                <h1>Hi, My name is Kevin</h1>
-                <h2>Front End Developer</h2>
+                <h1 style={{fontFamily: 'Poppins'}}> <span style={{color:'#00ADB5',fontFamily: 'Poppins'}}>Hi</span>, My Name is <span style={{color:'#00ADB5',fontFamily: 'Poppins'}}>Kevin</span></h1>
+                <h2 style={{fontFamily: 'Poppins'}}><span style={{color:'#00ADB5',fontFamily: 'Poppins'}}>Front End</span> Developer</h2>
                 <img src="" alt="" />
             </Titulo>
         </Section>

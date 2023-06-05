@@ -5,12 +5,18 @@ export const Section = styled.section`
     flex-direction: column;
     align-items: center;
     background-color: #EEEEEE ;
+    padding: 2rem 4rem;
 `
 
 export const Datos = styled.div `
     padding: 4rem 7rem;
+    @media screen and (max-width:450px) {
+        padding: 2rem 2rem;
+    }
 `
 
 export const Iconos = styled.div `
+width: 20%;
     display: flex;
+    justify-content: space-between;
 `
