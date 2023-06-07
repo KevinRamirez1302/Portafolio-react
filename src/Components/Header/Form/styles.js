@@ -11,5 +11,15 @@ export const Section = styled.section`
 export const Formulario = styled.form`
   display: flex;
   flex-direction: column;
-`;
+  
+`
+
+export const Button = styled.button`
+    width: 50%;
+    margin: auto;
+    padding: .5rem 1.5rem;
+    border: none;
+    background-color: #00ADB5;
+    color: white;
+`
 

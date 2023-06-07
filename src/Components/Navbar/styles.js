@@ -14,7 +14,11 @@ export const Nav = styled.nav`
     }
 `
 export const MyLogo = styled.img `
-    width: 2.5rem;
+    
+`
+export const ContainerLogo = styled.div`
+    display: flex;
+    align-items: center;
 `
 
 export const P = styled.p `
@@ -22,12 +26,15 @@ export const P = styled.p `
 `
 
 export const Span = styled.span `
-    
+   font-family: 'Montserrat', sans-serif;
+    font-size: 1rem
 
 `
 
 export const SpanTwo = styled.span `
-    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: #00ADB5;
 `
 
 export const Ul = styled.ul`
@@ -41,7 +48,7 @@ export const Enlace = styled(Link)`
     padding: .4rem 1.5rem;
     font-weight: bold;
     border-radius: 4px;
-    color: #222831;
+    color: white;
 
     @media screen and (max-width: 450px) {
 

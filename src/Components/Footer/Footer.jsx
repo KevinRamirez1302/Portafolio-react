@@ -1,6 +1,6 @@
 import { Form } from "../Header/Form/Form"
 import {BsLinkedin, BsGithub} from 'react-icons/bs'
-import { Section,Datos,Iconos } from "./styles"
+import { Section,Datos,Iconos,Parrafo } from "./styles"
 
 export const Footer = () => {
     return(<>
@@ -8,8 +8,8 @@ export const Footer = () => {
         <Section>
             <Form />
             <Datos>
-               <p>Email:Kevin.alexanderra1302@gmail.com</p> 
-               <p>Phone:+58 414-574-3920</p>
+               <Parrafo>Email: Kevin.alexanderra1302@gmail.com</Parrafo> 
+               <Parrafo>Phone: +58 414-574-3920</Parrafo>
             </Datos>
             <Iconos>
             <BsLinkedin color="blue" size={50} />
