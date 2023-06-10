@@ -4,3 +4,12 @@
   font-family: 'Montserrat', sans-serif;
   font-family: 'Roboto', sans-serif;
 }
+
+.Container{
+  width: 50%;
+  text-align: center;
+  @media screen and (max-width: 450px){
+      width: 80%;
+      text-align: justify;
+  }
+}

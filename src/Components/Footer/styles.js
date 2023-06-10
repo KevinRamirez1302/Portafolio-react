@@ -9,11 +9,12 @@ export const Section = styled.section`
 `
 export const Parrafo = styled.p `
     margin: 1rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
 `
 
 export const Datos = styled.div `
     padding: 4rem 7rem;
+    text-align: center;
     @media screen and (max-width:450px) {
         padding: 2rem 2rem;
     }
