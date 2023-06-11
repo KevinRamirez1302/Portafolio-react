@@ -28,7 +28,7 @@ export const AboutMe = () => {
           ref={scroll}
         >
           
-          <Titulo titulo="About Me" />
+          <Titulo id='Aboutme' titulo="About Me" />
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
             corrupti ea officiis voluptatibus eos fugiat dolor corporis

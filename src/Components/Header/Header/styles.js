@@ -15,6 +15,6 @@ export const Titulo = styled.div `
 
     @media screen and (max-width:450px) {
         text-align: center;
-        
+        font-size: 1.5rem;
     }
 `

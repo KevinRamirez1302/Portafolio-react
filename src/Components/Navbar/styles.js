@@ -21,8 +21,9 @@ export const ContainerLogo = styled.div`
     align-items: center;
 `
 
-export const P = styled.p `
-    
+export const P = styled(Link) `
+    text-decoration: none;
+    color: black;
 `
 
 export const Span = styled.span `
@@ -54,7 +55,16 @@ export const Enlace = styled(Link)`
 
         margin: .1rem;
         padding: .2rem .3rem ;
-        background-color: #EEEEEE;
+        background-color: #00ADB5;
+        display: none;
     }
+
+    @media screen and (max-width: 450px) {
+
+        margin: .1rem;
+        padding: .2rem .3rem ;
+        background-color: #00ADB5;
+        
+}
 `
 
