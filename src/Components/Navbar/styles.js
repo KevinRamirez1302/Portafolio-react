@@ -40,6 +40,10 @@ export const SpanTwo = styled.span `
 
 export const Ul = styled.ul`
     display: flex;
+    @media screen and (max-width: 450px) {
+
+        display: none;
+}
 `
 
 export const Enlace = styled(Link)`
@@ -56,7 +60,7 @@ export const Enlace = styled(Link)`
         margin: .1rem;
         padding: .2rem .3rem ;
         background-color: #00ADB5;
-        display: none;
+        
     }
 
     @media screen and (max-width: 450px) {
@@ -67,4 +71,12 @@ export const Enlace = styled(Link)`
         
 }
 `
+export const Hammenu = styled.div`
+   display: none;
 
+   @media screen and (max-width: 450px) {
+
+       display: block;
+
+}
+`
