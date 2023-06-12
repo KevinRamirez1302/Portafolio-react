@@ -65,7 +65,6 @@ export const Header = () => {
           <img src="" alt="" />
         </Titulo>
       </Section>
-
       <AboutMe />
       <Footer />
     </>

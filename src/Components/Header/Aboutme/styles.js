@@ -8,13 +8,16 @@ export const Section = styled.section`
     align-items: center;
     height: 50vh;
     background-color: #EEEEEE;
+    @media screen and(max-width:550px) {
+    
+    }
 `
 
 export const Div = styled.div `
     width: 50%;
     text-align: center;
-    @media screen and (max-width: 450px){
+    @media screen and (max-width: 550px){
         width: 80%;
-        text-align: justify;
+        text-align: center;
     }
 `

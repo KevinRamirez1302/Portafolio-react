@@ -2,6 +2,7 @@ import { Section } from "./styles";
 import Titulo from "../../Titulo/Titulo";
 import { useRef, useEffect } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
+
 export const AboutMe = () => {
   const scroll = useRef(null);
   const isInView = useInView(scroll, { once: true });

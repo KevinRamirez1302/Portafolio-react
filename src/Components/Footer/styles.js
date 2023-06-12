@@ -15,7 +15,7 @@ export const Parrafo = styled.p `
 export const Datos = styled.div `
     padding: 4rem 7rem;
     text-align: center;
-    @media screen and (max-width:450px) {
+    @media screen and (max-width:550px) {
         padding: 2rem 2rem;
     }
 `

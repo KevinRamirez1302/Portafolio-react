@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Section = styled.section`
   width: 40%;
   padding: 4rem 7rem;
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 550px) {
     width: 80%;
     padding: 1.5rem 2rem;
   }
