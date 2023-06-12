@@ -88,9 +88,43 @@ export const Sidebar = styled.div`
         width: 12rem;
         height: 10rem;
         position: absolute;
-        right: 0rem;
+        right: 1rem;
         top: 3rem;
        color: white;
        border-radius: 7px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
     }
+`
+
+
+
+export const SideUl = styled.ul `
+display: none;
+@media screen and (max-width:550px) {
+    display: block;
+    text-align: center;
+    }
+ 
+        
+`
+export const SideList = styled.li`
+@media screen and (max-width:550px) {
+    list-style: none;
+    margin: .6rem;
+    }
+   
+`
+
+export const SideLink = styled(Link)`
+@media screen and (max-width:550px) {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: large;
+    }
+  
+
 `
