@@ -1,11 +1,12 @@
 import { Form } from "../Header/Form/Form"
 import {BsLinkedin, BsGithub} from 'react-icons/bs'
 import { Section,Datos,Iconos,Parrafo } from "./styles"
+import Wave from '../../assets/wave.svg'
 
 export const Footer = () => {
     return(<>
     
-        <Section>
+        <Section style={{backgroundImage:`url(${Wave})`}}>
             <Form />
             <Datos>
                <Parrafo>Email: Kevin.alexanderra1302@gmail.com</Parrafo> 

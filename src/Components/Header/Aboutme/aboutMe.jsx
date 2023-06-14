@@ -2,6 +2,9 @@ import { Section } from "./styles";
 import Titulo from "../../Titulo/Titulo";
 import { useRef, useEffect } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
+import {SiJavascript} from 'react-icons/SI'
+import {GrReactjs} from 'react-icons/gr'
+
 
 export const AboutMe = () => {
   const scroll = useRef(null);
@@ -40,6 +43,12 @@ export const AboutMe = () => {
             temporibus ratione ea ex voluptatum laborum quibusdam.
           </p>
         </motion.div>
+        <div>
+        <Titulo titulo ='Skills'></Titulo>
+        <SiJavascript size={50} color="yellow" />
+        <GrReactjs size={40} color='turquoise' />
+        
+        </div>
       </Section>
     </>
   );

@@ -1,10 +1,11 @@
 import styled from "styled-components";
+import Backwawe from '../../assets/wave.svg'
 
 export const Section = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #EEEEEE ;
+    background-image: ;
     padding: 2rem 4rem;
 `
 export const Parrafo = styled.p `
