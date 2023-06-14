@@ -82,21 +82,23 @@ export const Hammenu = styled.div`
 }
 `
 
-export const Sidebar = styled.div`
-    @media screen and (max-width:550px) {
-        background-color: #00ADB5;
-        width: 12rem;
-        height: 10rem;
-        position: absolute;
-        right: 1rem;
-        top: 3rem;
-       color: white;
-       border-radius: 7px;
-       display: flex;
-       align-items: center;
-       justify-content: center;
-    }
+
+
+export const NavSide = styled.nav`
+    position: absolute;
+
+@media screen and (max-width: 550px) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center
+    
+}
+   
+
 `
+
 
 
 
@@ -105,6 +107,7 @@ display: none;
 @media screen and (max-width:550px) {
     display: block;
     text-align: center;
+    
     }
  
         
@@ -112,7 +115,8 @@ display: none;
 export const SideList = styled.li`
 @media screen and (max-width:550px) {
     list-style: none;
-    margin: .6rem;
+    padding: .4rem;
+    
     }
    
 `
@@ -122,7 +126,7 @@ export const SideLink = styled(Link)`
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    color: white;
+    color:#047467;
     font-size: large;
     }
   

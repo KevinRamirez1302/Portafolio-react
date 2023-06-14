@@ -7,7 +7,7 @@ import {
   SpanTwo,
   ContainerLogo,
   Hammenu,
-  Sidebar,
+  NavSide,
   SideUl,
   SideList,
   SideLink,
@@ -28,13 +28,12 @@ export const Navbar = () => {
     closed: { opacity: 0, y: 20, transition: { duration: 0.2 } }
   };
 
-  const Menu = () => {
-    setIsOpen(!isOpen);
-  };
-
+ 
   return (
     <>
-      <Nav>
+      <Nav 
+      animate={isOpen == true ? "open" : "closed"}
+      >
         <motion.div whileHover={{ rotate: 4 }}>
           <ContainerLogo>
             <P to="/">
@@ -77,52 +76,50 @@ export const Navbar = () => {
             </Enlace>
           </motion.li>
         </Ul>
+       
+        <NavSide as={motion.nav}
+        
+      animate={isOpen ? "open" : "closed"}
+      className="menu"
+    >
+      <motion.div
+        whileTap={{ scale: 0.97 }}
+        onClick={() => setIsOpen(!isOpen)}
+      >
         <Hammenu as={motion.div} whileTap={{ scale: 0.90 }}>
-          <AiOutlineMenu size={25} onClick={() => Menu()} />
+          <AiOutlineMenu size={25} onClick={() => setIsOpen(!isOpen)} />
         </Hammenu>
-        {isOpen == true ? (
-          <Sidebar
-            as={motion.div}
-            initial={{ y: -20 }}
-            animate={{ y: 0 }}
-            transition={{ type: "spring", stiffness: 100 }}
-          >
-            <SideUl
-                variants={{
-                    open: {
-                      clipPath: "inset(0% 0% 0% 0% round 10px)",
-                      transition: {
-                        type: "spring",
-                        bounce: 0,
-                        duration: 0.7,
-                        delayChildren: 0.3,
-                        staggerChildren: 0.05
-                      }
-                    },
-                    closed: {
-                      clipPath: "inset(10% 50% 90% 50% round 10px)",
-                      transition: {
-                        type: "spring",
-                        bounce: 0,
-                        duration: 0.3
-                      }
-                    }
-                  }}
-            >
-              <SideList as={motion.li} variants={itemVariants} >
-                <SideLink to="Projects">Projects</SideLink>
-              </SideList>
-              <SideList as={motion.li} variants={itemVariants}>
-                <SideLink>About Me</SideLink>
-              </SideList>
-              <SideList as={motion.li} variants={itemVariants}>
-                <SideLink>Contact Me</SideLink>
-              </SideList>
-            </SideUl>
-          </Sidebar>
-        ) : (
-          <></>
-        )}
+      </motion.div>
+      <SideUl
+        variants={{
+          open: {
+            clipPath: "inset(0% 0% 0% 0% round 10px)",
+            transition: {
+              type: "spring",
+              bounce: 0,
+              duration: 0.7,
+              delayChildren: 0.3,
+              staggerChildren: 0.05
+            }
+          },
+          closed: {
+            clipPath: "inset(10% 50% 90% 50% round 10px)",
+            transition: {
+              type: "spring",
+              bounce: 0,
+              duration: 0.3
+            }
+          }
+        }}
+
+      >
+        <SideList as={motion.li} variants={itemVariants}><SideLink>Projects</SideLink></SideList>
+        <SideList as={motion.li} variants={itemVariants}><SideLink>About Me</SideLink> </SideList>
+        <SideList as={motion.li} variants={itemVariants}><SideLink>Contact Me</SideLink></SideList>
+       
+      </SideUl>
+    </NavSide>
+    
       </Nav>
     </>
   );

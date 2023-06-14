@@ -3,6 +3,7 @@ import { AboutMe } from "../Aboutme/aboutMe";
 import { Footer } from "../../Footer/Footer";
 import { motion } from "framer-motion";
 
+
 export const Header = () => {
   const estilos = {
     hidden: { opacity: 0 },

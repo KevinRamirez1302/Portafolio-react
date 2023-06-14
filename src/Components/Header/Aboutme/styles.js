@@ -8,8 +8,9 @@ export const Section = styled.section`
     align-items: center;
     height: 50vh;
     background-color: #EEEEEE;
-    @media screen and(max-width:550px) {
     
+    @media screen and(max-width:550px) {
+        width: 100%;
     }
 `
 

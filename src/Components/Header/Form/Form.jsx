@@ -3,10 +3,15 @@ import { Formulario, Section, Button } from "./styles";
 import Titulo from "../../Titulo/Titulo";
 import { motion, useAnimation, useInView } from "framer-motion";
 import { useRef, useEffect } from "react";
+import Confetti from "react-confetti";
+import { useState } from "react";
+
 export const Form = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const controls = useAnimation();
+
+  const [Open,setOpen] = useState(false)
 
   useEffect(() => {
     if (isInView) {
@@ -28,7 +33,10 @@ export const Form = () => {
           ref={ref}
         >
           <Titulo titulo="Contact Me"></Titulo>
-          <Formulario action="">
+          <Formulario onSubmit={(e) => {
+            e.preventDefault()
+          
+          }} action="">
             <TextField
               style={{ margin: 15 }}
               id="outlined-basic"
@@ -47,8 +55,9 @@ export const Form = () => {
               label="Write Me"
               variant="outlined"
             />
-            <Button>Enviar mensaje</Button>
+            <Button whileTap={{ scale: 0.9 }} as={motion.button} >Enviar mensaje</Button>
           </Formulario>
+        
         </motion.div>
       </Section>
     </>
