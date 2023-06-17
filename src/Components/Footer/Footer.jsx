@@ -1,22 +1,25 @@
+import { Section,Datos,Iconos,Parrafo,FormContainer,Img } from "./styles"
+import Linkedin from '../../assets/IMG/linkedin.png'
+import Git from '../../assets/IMG/git.png'
+
 import { Form } from "../Header/Form/Form"
-import {BsLinkedin, BsGithub} from 'react-icons/bs'
-import { Section,Datos,Iconos,Parrafo } from "./styles"
-import Wave from '../../assets/wave.svg'
 
 export const Footer = () => {
     return(<>
-    
-        <Section style={{backgroundImage:`url(${Wave})`}}>
+        <FormContainer>
             <Form />
+        </FormContainer>
+        
+        <Section>  
             <Datos>
                <Parrafo>Email: Kevin.alexanderra1302@gmail.com</Parrafo> 
                <Parrafo>Phone: +58 414-574-3920</Parrafo>
             </Datos>
             <Iconos>
-            <BsLinkedin color="blue" size={50} />
-            <BsGithub size={50} />
+                <Img src={Git} alt="" />
+                <Img src={Linkedin} alt="" />
             </Iconos>
         </Section>
-    
+        
     </>)
 }

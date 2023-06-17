@@ -8,7 +8,7 @@ export const Nav = styled.nav`
     background-color: #EEEEEE;
 
     @media screen and( max-width: 450px){
-        padding: 1rem;
+        padding: 1rem 0;
         align-items: center;
         justify-content: center;
     }

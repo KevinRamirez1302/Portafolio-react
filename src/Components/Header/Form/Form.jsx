@@ -1,17 +1,15 @@
 import { TextField } from "@mui/material";
-import { Formulario, Section, Button } from "./styles";
+import { Formulario, Section, Button,Div } from "./styles";
 import Titulo from "../../Titulo/Titulo";
 import { motion, useAnimation, useInView } from "framer-motion";
 import { useRef, useEffect } from "react";
-import Confetti from "react-confetti";
-import { useState } from "react";
+
 
 export const Form = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const controls = useAnimation();
 
-  const [Open,setOpen] = useState(false)
 
   useEffect(() => {
     if (isInView) {
@@ -22,7 +20,7 @@ export const Form = () => {
   return (
     <>
       <Section>
-        <motion.div
+        <Div as={motion.div}
           variants={{
             hidden: { opacity: 0, y: 75 },
             show: { opacity: 1, y: 0 },
@@ -58,7 +56,7 @@ export const Form = () => {
             <Button whileTap={{ scale: 0.9 }} as={motion.button} >Enviar mensaje</Button>
           </Formulario>
         
-        </motion.div>
+        </Div>
       </Section>
     </>
   );

@@ -1,7 +1,9 @@
-import { Section, Titulo } from "./styles";
+import { Section, Titulo, Img } from "./styles";
 import { AboutMe } from "../Aboutme/aboutMe";
 import { Footer } from "../../Footer/Footer";
 import { motion } from "framer-motion";
+import Git from '../../../assets/IMG/git.png'
+import Linkedin from '../../../assets/IMG/linkedin.png'
 
 
 export const Header = () => {
@@ -63,8 +65,19 @@ export const Header = () => {
               Developer
             </motion.span>
           </h2>
-          <img src="" alt="" />
+         
         </Titulo>
+          <motion.div
+            variants={estilos}
+            initial="hidden"
+            animate="show"
+            transition={{ delay: 4.5 }}
+            
+          >
+            <Img src={Git} alt="" />
+            <Img src={Linkedin} alt="" />
+          </motion.div>
+          
       </Section>
       <AboutMe />
       <Footer />

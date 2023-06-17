@@ -1,9 +1,16 @@
-import { Section } from "./styles";
+import { Section,SkillsContainer,ImgContainer,Img,Container,ItemContainer } from "./styles";
 import Titulo from "../../Titulo/Titulo";
 import { useRef, useEffect } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
-import {SiJavascript} from 'react-icons/SI'
-import {GrReactjs} from 'react-icons/gr'
+import java from '../../../assets/img/js.png'
+import Html from '../../../assets/IMG/html-5.png'
+import Css from '../../../assets/IMG/css.png'
+import ReactLogo from '../../../assets/react.svg'
+import TypeLogo from '../../../assets/IMG/typescript.png'
+import Git from '../.././../assets/IMG/git.png'
+import Boots from '../../../assets/IMG/bootstrap.png'
+import Vite from '../../../assets/IMG/vitejs.svg'
+import { BsStarFill } from 'react-icons/bs'
 
 
 export const AboutMe = () => {
@@ -20,8 +27,8 @@ export const AboutMe = () => {
   return (
     <>
       <Section>
-        <motion.div
-          className="Container"
+        <Container
+          as={motion.div}
           variants={{
             hidden: { opacity: 0, y: 75 },
             show: { opacity: 1, y: 0 },
@@ -42,13 +49,38 @@ export const AboutMe = () => {
             Excepturi non dolores iste impedit corporis velit molestias, vitae a
             temporibus ratione ea ex voluptatum laborum quibusdam.
           </p>
-        </motion.div>
-        <div>
+        </Container>
+        <SkillsContainer>
         <Titulo titulo ='Skills'></Titulo>
-        <SiJavascript size={50} color="yellow" />
-        <GrReactjs size={40} color='turquoise' />
+            <ImgContainer>
+                <ItemContainer>
+                  <Img src={Html} alt="Html" />
+                </ItemContainer>
+                <ItemContainer>
+                   <Img src={Css} alt="CSS" />
+                </ItemContainer>
+                <ItemContainer>
+                    <Img src={java} alt="Javascript" />
+                </ItemContainer>
+                <ItemContainer>
+                  <Img src= {ReactLogo} alt="React" />
+                </ItemContainer>
+                <ItemContainer>
+                  <Img src={TypeLogo} alt="Typescript"/>
+                </ItemContainer>
+                <ItemContainer>
+                  <Img src={Git} alt="Typescript"/>
+                </ItemContainer>
+                <ItemContainer>
+                  <Img src={Boots} alt="Typescript"/>
+                </ItemContainer>
+                <ItemContainer>
+                  <Img src={Vite} alt="Typescript"/>
+                </ItemContainer>
+                
+            </ImgContainer>
         
-        </div>
+        </SkillsContainer>
       </Section>
     </>
   );

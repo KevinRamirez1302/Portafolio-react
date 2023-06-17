@@ -1,28 +1,41 @@
 import styled from "styled-components";
-import Backwawe from '../../assets/wave.svg'
+
 
 export const Section = styled.section`
+    background-color: #00ADB5;
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    background-image: ;
     padding: 2rem 4rem;
+    @media screen and (max-width:550px){
+       
+    }
+    
 `
+export const FormContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+`
+
 export const Parrafo = styled.p `
     margin: 1rem;
     font-family: 'Poppins', sans-serif;
 `
 
 export const Datos = styled.div `
-    padding: 4rem 7rem;
-    text-align: center;
+   
+    color: white;
     @media screen and (max-width:550px) {
-        padding: 2rem 2rem;
+        
     }
 `
 
 export const Iconos = styled.div `
-width: 20%;
-    display: flex;
-    justify-content: space-between;
+
+`
+
+export const Img = styled.img`
+    width: 4rem;
 `
