@@ -1,17 +1,22 @@
-import { Section,SkillsContainer,ImgContainer,Img,Container,ItemContainer } from "./styles";
+import {
+  Section,
+  SkillsContainer,
+  ImgContainer,
+  Img,
+  Container,
+  ItemContainer,
+} from "./styles";
 import Titulo from "../../Titulo/Titulo";
 import { useRef, useEffect } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
-import java from '../../../assets/img/js.png'
-import Html from '../../../assets/IMG/html-5.png'
-import Css from '../../../assets/IMG/css.png'
-import ReactLogo from '../../../assets/react.svg'
-import TypeLogo from '../../../assets/IMG/typescript.png'
-import Git from '../.././../assets/IMG/git.png'
-import Boots from '../../../assets/IMG/bootstrap.png'
-import Vite from '../../../assets/IMG/vitejs.svg'
-import { BsStarFill } from 'react-icons/bs'
-
+import java from "../../../assets/img/js.png";
+import Html from "../../../assets/IMG/html-5.png";
+import Css from "../../../assets/IMG/css.png";
+import ReactLogo from "../../../assets/react.svg";
+import TypeLogo from "../../../assets/IMG/typescript.png";
+import Git from "../.././../assets/IMG/git.png";
+import Boots from "../../../assets/IMG/bootstrap.png";
+import Vite from "../../../assets/IMG/vitejs.svg";
 
 export const AboutMe = () => {
   const scroll = useRef(null);
@@ -38,8 +43,7 @@ export const AboutMe = () => {
           transition={{ duration: 0.5, delay: 0.25 }}
           ref={scroll}
         >
-          
-          <Titulo id='Aboutme' titulo="About Me" />
+          <Titulo id="Aboutme" titulo="About Me" />
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
             corrupti ea officiis voluptatibus eos fugiat dolor corporis
@@ -51,35 +55,33 @@ export const AboutMe = () => {
           </p>
         </Container>
         <SkillsContainer>
-        <Titulo titulo ='Skills'></Titulo>
-            <ImgContainer>
-                <ItemContainer>
-                  <Img src={Html} alt="Html" />
-                </ItemContainer>
-                <ItemContainer>
-                   <Img src={Css} alt="CSS" />
-                </ItemContainer>
-                <ItemContainer>
-                    <Img src={java} alt="Javascript" />
-                </ItemContainer>
-                <ItemContainer>
-                  <Img src= {ReactLogo} alt="React" />
-                </ItemContainer>
-                <ItemContainer>
-                  <Img src={TypeLogo} alt="Typescript"/>
-                </ItemContainer>
-                <ItemContainer>
-                  <Img src={Git} alt="Typescript"/>
-                </ItemContainer>
-                <ItemContainer>
-                  <Img src={Boots} alt="Typescript"/>
-                </ItemContainer>
-                <ItemContainer>
-                  <Img src={Vite} alt="Typescript"/>
-                </ItemContainer>
-                
-            </ImgContainer>
-        
+          <Titulo titulo="Skills"></Titulo>
+          <ImgContainer>
+            <ItemContainer as={motion.div}>
+              <Img src={Html} alt="Html" />
+            </ItemContainer>
+            <ItemContainer>
+              <Img src={Css} alt="CSS" />
+            </ItemContainer>
+            <ItemContainer>
+              <Img src={java} alt="Javascript" />
+            </ItemContainer>
+            <ItemContainer>
+              <Img src={ReactLogo} alt="React" />
+            </ItemContainer>
+            <ItemContainer>
+              <Img src={TypeLogo} alt="Typescript" />
+            </ItemContainer>
+            <ItemContainer>
+              <Img src={Git} alt="Typescript" />
+            </ItemContainer>
+            <ItemContainer>
+              <Img src={Boots} alt="Typescript" />
+            </ItemContainer>
+            <ItemContainer>
+              <Img src={Vite} alt="Typescript" />
+            </ItemContainer>
+          </ImgContainer>
         </SkillsContainer>
       </Section>
     </>

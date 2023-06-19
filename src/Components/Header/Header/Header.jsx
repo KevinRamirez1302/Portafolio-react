@@ -2,9 +2,8 @@ import { Section, Titulo, Img } from "./styles";
 import { AboutMe } from "../Aboutme/aboutMe";
 import { Footer } from "../../Footer/Footer";
 import { motion } from "framer-motion";
-import Git from '../../../assets/IMG/git.png'
-import Linkedin from '../../../assets/IMG/linkedin.png'
-
+import Git from "../../../assets/IMG/git.png";
+import Linkedin from "../../../assets/IMG/linkedin.png";
 
 export const Header = () => {
   const estilos = {
@@ -31,7 +30,7 @@ export const Header = () => {
               initial="hidden"
               animate="show"
               transition={{ delay: 1.5 }}
-              style={{fontFamily: "Poppins"}}
+              style={{ fontFamily: "Poppins" }}
             >
               , My Name is
             </motion.span>{" "}
@@ -65,19 +64,28 @@ export const Header = () => {
               Developer
             </motion.span>
           </h2>
-         
         </Titulo>
-          <motion.div
-            variants={estilos}
-            initial="hidden"
-            animate="show"
-            transition={{ delay: 4.5 }}
-            
+        <motion.div
+          variants={estilos}
+          initial="hidden"
+          animate="show"
+          transition={{ delay: 4.5 }}
+        >
+          <a
+            href="https://github.com/KevinRamirez1302"
+            rel="noreferrer"
+            target="_blank"
           >
             <Img src={Git} alt="" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/kevindev1302/"
+            rel="noreferrer"
+            target="_blank"
+          >
             <Img src={Linkedin} alt="" />
-          </motion.div>
-          
+          </a>
+        </motion.div>
       </Section>
       <AboutMe />
       <Footer />
