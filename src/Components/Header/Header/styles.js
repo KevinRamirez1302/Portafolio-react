@@ -68,4 +68,7 @@ export const ImgContainer = styled(motion.div)`
   align-items: center;
   justify-content: space-between;
   gap: 1.2rem;
+
+  @media screen and (max-width: 550px) {
+  }
 `;

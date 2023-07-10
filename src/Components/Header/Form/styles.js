@@ -58,6 +58,9 @@ export const H3 = styled.a`
   color: #737373;
   display: flex;
   align-items: center;
+  @media screen and (max-width: 550px) {
+    margin: 1.5rem;
+  }
 `;
 
 export const Img = styled.img`

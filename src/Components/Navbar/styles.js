@@ -31,7 +31,7 @@ export const Span = styled.span`
   font-size: 1rem;
   color: white;
   @media screen and (max-width: 550px) {
-    font-size: 1.5rem;
+    font-size: 0.9rem;
   }
 `;
 
@@ -40,7 +40,7 @@ export const SpanTwo = styled.span`
   font-size: 1.2rem;
   color: #00adb5;
   @media screen and (max-width: 550px) {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 `;
 
@@ -78,7 +78,9 @@ export const Enlace = styled(motion(Link))`
   vertical-align: middle;
   white-space: nowrap;
   width: 100%;
-
+  @media screen and (max-width: 550px) {
+    font-size: 10px;
+  }
   ::after {
     background-clip: padding-box;
     background-color: #1b6b93;
