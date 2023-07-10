@@ -1,9 +1,25 @@
-import { Section, Titulo, Img } from "./styles";
-import { AboutMe } from "../Aboutme/aboutMe";
-import { Footer } from "../../Footer/Footer";
+import {
+  Section,
+  Titulo,
+  Img,
+  VeneLogo,
+  Skills,
+  SkillImage,
+  ImgContainer,
+  Title,
+} from "./styles";
 import { motion } from "framer-motion";
-import Git from "../../../assets/IMG/git.png";
+import { Projects } from "../../Projects/project";
+import Git from "../../../assets/IMG/github-mark-white.svg";
 import Linkedin from "../../../assets/IMG/linkedin.png";
+import Vene from "../../../assets/IMG/venezuela.png";
+import Html from "../../../assets/IMG/html-5.png";
+import Css from "../../../assets/IMG/css.png";
+import Js from "../../../assets/IMG/js.png";
+import Bootstrap from "../../../assets/IMG/bootstrap.png";
+import Express from "../../../assets/IMG/expressjs-ar21.svg";
+import Node from "../../../assets/IMG/nodejs-ar21.svg";
+import React from "../../../assets/IMG/react.svg";
 
 export const Header = () => {
   const estilos = {
@@ -21,7 +37,7 @@ export const Header = () => {
               initial="hidden"
               animate="show"
               transition={{ delay: 0.5 }}
-              style={{ color: "#00ADB5", fontFamily: "Poppins" }}
+              style={{ color: "#7FE9DE", fontFamily: "Poppins" }}
             >
               Hi
             </motion.span>
@@ -30,7 +46,7 @@ export const Header = () => {
               initial="hidden"
               animate="show"
               transition={{ delay: 1.5 }}
-              style={{ fontFamily: "Poppins" }}
+              style={{ color: "#EEEEEE", fontFamily: "Poppins" }}
             >
               , My Name is
             </motion.span>{" "}
@@ -39,7 +55,7 @@ export const Header = () => {
               initial="hidden"
               animate="show"
               transition={{ delay: 2.5 }}
-              style={{ color: "#00ADB5", fontFamily: "Poppins" }}
+              style={{ color: "#7FE9DE", fontFamily: "Poppins" }}
             >
               Kevin
             </motion.span>
@@ -50,7 +66,7 @@ export const Header = () => {
               initial="hidden"
               animate="show"
               transition={{ delay: 3.5 }}
-              style={{ color: "#00ADB5", fontFamily: "Poppins" }}
+              style={{ color: "#7FE9DE", fontFamily: "Poppins" }}
             >
               Front End
             </motion.span>{" "}
@@ -59,9 +75,10 @@ export const Header = () => {
               initial="hidden"
               animate="show"
               transition={{ delay: 3.5 }}
-              style={{ fontFamily: "Poppins" }}
+              style={{ color: "#EEEEEE", fontFamily: "Poppins" }}
             >
               Developer
+              <VeneLogo whileHover={{ scale: 1.3 }} src={Vene} alt="" />
             </motion.span>
           </h2>
         </Titulo>
@@ -87,8 +104,19 @@ export const Header = () => {
           </a>
         </motion.div>
       </Section>
-      <AboutMe />
-      <Footer />
+      <Projects />
+      <Skills>
+        <Title>Some Skills</Title>
+        <ImgContainer>
+          <SkillImage src={Html} />
+          <SkillImage src={Css} />
+          <SkillImage src={Js} />
+          <SkillImage src={React} />
+          <SkillImage src={Bootstrap} />
+          <SkillImage src={Node} />
+          <SkillImage style={{ backgroundColor: "white" }} src={Express} />
+        </ImgContainer>
+      </Skills>
     </>
   );
 };

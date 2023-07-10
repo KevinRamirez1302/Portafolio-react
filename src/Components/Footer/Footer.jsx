@@ -1,27 +1,12 @@
-import {
-  Section,
-  Datos,
-  Iconos,
-  Parrafo,
-  FormContainer,
-  Img,
-  Logo,
-} from "./styles";
+import { Section, Datos, Iconos, Parrafo, Img } from "./styles";
 import Linkedin from "../../assets/IMG/linkedin.png";
-import Git from "../../assets/IMG/git.png";
-import LogoMy from "../../assets/Ke.Dev.png";
+import Git from "../../assets/IMG/github-mark.png";
 import { motion } from "framer-motion";
-import { Form } from "../Header/Form/Form";
 
 export const Footer = () => {
   return (
     <>
-      <FormContainer>
-        <Form />
-      </FormContainer>
-
       <Section>
-        <Logo src={LogoMy} />
         <Datos>
           <Parrafo>Email: Kevin.alexanderra1302@gmail.com</Parrafo>
           <Parrafo>Phone: +58 414-574-3920</Parrafo>

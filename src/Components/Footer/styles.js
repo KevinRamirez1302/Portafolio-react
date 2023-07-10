@@ -18,6 +18,9 @@ export const FormContainer = styled.div`
 export const Parrafo = styled.p`
   margin: 1rem;
   font-family: "Poppins", sans-serif;
+  @media screen and (max-width: 550px) {
+    margin: 0.5rem;
+  }
 `;
 
 export const Datos = styled.div`
@@ -38,4 +41,7 @@ export const Img = styled.img`
 export const Logo = styled.img`
   width: 8rem;
   border-radius: 10px;
+  @media screen and (max-width: 550px) {
+    display: none;
+  }
 `;
