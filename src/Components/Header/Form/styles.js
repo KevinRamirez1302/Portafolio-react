@@ -59,7 +59,7 @@ export const H3 = styled.a`
   display: flex;
   align-items: center;
   @media screen and (max-width: 550px) {
-    margin: 1.5rem;
+    margin: 0.8rem;
   }
 `;
 
