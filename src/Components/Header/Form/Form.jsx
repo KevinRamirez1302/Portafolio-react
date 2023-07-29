@@ -14,6 +14,7 @@ import {
 import Linkedin from "../../../assets/IMG/linkedin.png";
 import Github from "../../../assets/IMG/github-mark.png";
 import Titulo from "../../Titulo/Titulo";
+import CV from "../../../assets/IMG/cv.png";
 import { motion } from "framer-motion";
 
 export const Form = () => {
@@ -64,6 +65,15 @@ export const Form = () => {
               target="_blank"
             >
               <Img src={Linkedin} />
+            </a>
+
+            <a
+              href="./Curriculum.pdf"
+              rel="noreferrer"
+              target="_blank"
+              download
+            >
+              <Img src={CV} alt="Cv" />
             </a>
             <a
               href="https://github.com/KevinRamirez1302"

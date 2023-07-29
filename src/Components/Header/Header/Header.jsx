@@ -20,6 +20,7 @@ import Bootstrap from "../../../assets/IMG/bootstrap.png";
 import Express from "../../../assets/IMG/expressjs-ar21.svg";
 import Node from "../../../assets/IMG/nodejs-ar21.svg";
 import React from "../../../assets/IMG/react.svg";
+import CV from "../../../assets/IMG/cv.png";
 
 export const Header = () => {
   const estilos = {
@@ -92,13 +93,19 @@ export const Header = () => {
             href="https://github.com/KevinRamirez1302"
             rel="noreferrer"
             target="_blank"
+            alt="Github"
           >
             <Img src={Git} alt="" />
+          </a>
+
+          <a href="./Curriculum.pdf" rel="noreferrer" target="_blank" download>
+            <Img src={CV} alt="Cv" />
           </a>
           <a
             href="https://www.linkedin.com/in/kevindev1302/"
             rel="noreferrer"
             target="_blank"
+            alt="Linkedin"
           >
             <Img src={Linkedin} alt="" />
           </a>

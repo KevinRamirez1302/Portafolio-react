@@ -59,7 +59,7 @@ export const Enlace = styled(motion(Link))`
   cursor: pointer;
   display: inline-block;
   font-family: din-round, sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 700;
   text-decoration: none;
   letter-spacing: 0.8px;

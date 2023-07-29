@@ -47,6 +47,7 @@ export const Container = styled.div`
   flex-direction: column;
 
   @media screen and (max-width: 550px) {
+    margin: 2rem;
   }
 `;
 
@@ -65,9 +66,11 @@ export const H3 = styled.a`
 
 export const Img = styled.img`
   width: 4rem;
+  margin: 0.8rem;
 `;
 
 export const Contact = styled.div`
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
 `;
